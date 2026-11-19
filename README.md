@@ -2,6 +2,8 @@
 
 A Python and Streamlit research application for simulating the removal of methylene blue from water in a fixed bed of granular activated carbon. It connects a mechanistic column model, experimental-curve calibration, and machine-learning surrogates used for scenario screening.
 
+**[Try the live simulator on Streamlit Community Cloud](https://adsorption-breakthrough-simulator.streamlit.app/)** (no sign-in required).
+
 ## Preview
 
 The screenshot and the example curve below use the synthetic demo fixture, not laboratory measurements.
