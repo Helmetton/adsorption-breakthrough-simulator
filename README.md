@@ -10,6 +10,12 @@ The screenshot and the example curve below use the synthetic demo fixture, not l
 
 ![Simulated breakthrough curve and its interpolated threshold crossing](docs/screenshots/demo-breakthrough.png)
 
+## Streamlit Community Cloud
+
+Deploy `main` with `cloud_app.py` as the entry point and Python 3.12. The public demo opens on a synthetic scenario with a working breakthrough curve, editable column inputs, mass-balance diagnostics and CSV export. It needs no data preparation or secrets.
+
+The demo runs the same mechanistic solver on a fixed-size grid and a bounded input range. There are no input uploads, package installation, local research data or live ML training in the public demo. Do not deploy the full local `app.py` as a public service.
+
 ## Run locally
 
 Use Python 3.12 and run the commands from the project root. On Windows (PowerShell):
@@ -55,7 +61,7 @@ Run `demo_data.py` **only in a fresh checkout**. It generates a clearly labeled 
 
 The application reads `cleaned_dynamic_sorption_data.csv` and uses `dynamic_sorption_experiment_summary.csv` for its experiment summary. For authorized research work, [import_experimental_excel.py](import_experimental_excel.py) supports the project's workbook format and recomputes concentrations from the analytical calibration. The public checkout excludes the laboratory workbook, observations, fitted artifacts, the historical synthetic dataset, and saved model bundles. Do not submit those files in issues or commits without permission.
 
-The demo is enough to explore simulation and calibration. The ML tab can generate new synthetic cases and train models or accept a compatible dataset. The bundled research result is **not** reproduced by the demo fixture. Model-based screening requires a model that passes the app's existing quality and provenance checks; its manifest and supporting files must match. Load `joblib` files only from trusted sources. This release is for local use and is not configured for anonymous hosting.
+The local demo fixture is enough to explore simulation and calibration. The local ML tab can generate new synthetic cases and train models or accept a compatible dataset. The bundled research result is **not** reproduced by the demo fixture. Model-based screening requires a model that passes the app's existing quality and provenance checks; its manifest and supporting files must match. Load `joblib` files only from trusted sources. For anonymous hosting use `cloud_app.py`, not the local application.
 
 ## Code and tools
 

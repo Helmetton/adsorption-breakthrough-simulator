@@ -5,6 +5,7 @@
 !/.gitattributes
 !/adsorbents.py
 !/app.py
+!/cloud_app.py
 !/audit_numerical_core.py
 !/dependency_manager.py
 !/display_units.py
@@ -50,6 +51,7 @@
 !/tests/
 /tests/*
 !/tests/test_public_demo.py
+!/tests/test_cloud_demo.py
 !/docs/
 /docs/*
 !/docs/screenshots/
