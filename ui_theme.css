@@ -1,0 +1,133 @@
+/* Display-only rules. Keep Streamlit's theme colors and severity styles. */
+[data-testid="stMainBlockContainer"] {
+    max-width: 1280px;
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
+}
+
+[data-testid="stMain"] h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    padding-bottom: 0.5rem;
+}
+
+[data-testid="stMain"] h2 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+[data-testid="stMain"] h3 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+[data-testid="stMain"] h4,
+[data-testid="stMain"] h5 {
+    font-size: 1.0625rem;
+    line-height: 1.4;
+}
+
+[data-testid="stMain"] :is(h1, h2, h3, h4, h5, p, label) {
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+}
+
+[data-testid="stMarkdownContainer"] p {
+    line-height: 1.55;
+}
+
+[data-testid="stTabs"] [data-baseweb="tab-list"] {
+    gap: 0.75rem;
+}
+
+[data-testid="stTabs"] [data-baseweb="tab"] {
+    min-height: 3rem;
+    height: auto;
+    max-width: 18rem;
+    white-space: normal;
+    padding: 0.65rem 0.25rem;
+}
+
+[data-testid="stTabs"] [data-baseweb="tab"] p {
+    white-space: normal;
+    line-height: 1.35;
+    text-align: start;
+}
+
+[data-testid="stExpander"] {
+    border-radius: 6px;
+}
+
+[data-testid="stExpander"] summary {
+    min-height: 2.75rem;
+    padding: 0.65rem 0.75rem;
+}
+
+[data-testid="stButton"] button,
+[data-testid="stDownloadButton"] button {
+    min-height: 2.5rem;
+    border-radius: 6px;
+}
+
+[data-testid="stButton"] [data-testid="stBaseButton-primary"] {
+    width: 100%;
+    font-weight: 600;
+}
+
+.st-key-fit_run {
+    width: 100%;
+}
+
+[data-testid="stAlert"] {
+    border-radius: 6px;
+}
+
+[data-testid="stMetric"] {
+    padding: 0.25rem 0;
+}
+
+[data-testid="stMetricValue"] {
+    font-size: 1.75rem;
+}
+
+[data-testid="stMetricLabel"] {
+    white-space: normal;
+}
+
+[data-testid="stMetricLabel"] p {
+    overflow: visible;
+    white-space: normal;
+}
+
+[data-testid="stTable"] th,
+[data-testid="stTable"] td {
+    overflow-wrap: anywhere;
+    white-space: normal;
+    vertical-align: top;
+    padding: 0.5rem 0.65rem;
+}
+
+[data-testid="stTable"] th {
+    background: color-mix(in srgb, currentColor 5%, transparent);
+}
+
+/* Preserve the existing single-column layout for narrow windows. */
+@media (max-width: 1100px) {
+    [data-testid="stMain"] [data-testid="stHorizontalBlock"] {
+        flex-direction: column;
+    }
+    [data-testid="stMain"] [data-testid="stColumn"] {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+        min-width: 0 !important;
+    }
+}
+
+@media (max-width: 640px) {
+    [data-testid="stMainBlockContainer"] {
+        padding: 4.5rem 1rem 2rem;
+    }
+    [data-testid="stTabs"] [data-baseweb="tab-list"] {
+        gap: 0.5rem;
+    }
+}

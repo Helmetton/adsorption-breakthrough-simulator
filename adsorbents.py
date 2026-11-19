@@ -1,0 +1,75 @@
+# -*- coding: utf-8 -*-
+"""Reference adsorbent profiles used by the UI and ML data generator.
+
+Text shown to the user is stored as translation keys. Numeric ranges stay here
+because they are data, not interface copy.
+"""
+
+ADSORBENT_PROFILES = {
+    "chemviron_natural": {
+        "name_key": "adsorbent_chemviron_name",
+        "type_key": "adsorbent_chemviron_type",
+        "manufacturer": "Chemviron Carbon",
+        "country_key": "country_belgium",
+        "moisture": "<5% w/w",
+        "ash": "<3% w/w",
+        "iodine_number": "1000-1100 mg/g",
+        "passport_bulk_density_min": 0.49,
+        "passport_bulk_density_max": 0.53,
+        "experimental_bed_density_min": 0.24,
+        "experimental_bed_density_max": 0.31,
+        "experimental_bed_density_comment_key": "adsorbent_chemviron_experimental_density_comment",
+        "bet_surface_area": "1050-1150 m²/g",
+        "hardness": "95-99%",
+        "ph": "9-11",
+        "methylene_blue_adsorption": "180-230 mg/g",
+        "comment_key": "adsorbent_chemviron_comment",
+    },
+    "wood_generic": {
+        "name_key": "adsorbent_wood_name",
+        "type_key": "adsorbent_wood_type",
+        "manufacturer": "",
+        "country_key": "",
+        "passport_bulk_density_min": 0.25,
+        "passport_bulk_density_max": 0.55,
+        "experimental_bed_density_min": None,
+        "experimental_bed_density_max": None,
+        "bet_surface_area": "600-1200 m²/g",
+        "comment_key": "adsorbent_generic_comment",
+    },
+    "coconut_generic": {
+        "name_key": "adsorbent_coconut_name",
+        "type_key": "adsorbent_coconut_type",
+        "manufacturer": "",
+        "country_key": "",
+        "passport_bulk_density_min": 0.40,
+        "passport_bulk_density_max": 0.60,
+        "experimental_bed_density_min": None,
+        "experimental_bed_density_max": None,
+        "bet_surface_area": "900-1400 m²/g",
+        "comment_key": "adsorbent_generic_comment",
+    },
+    "coal_generic": {
+        "name_key": "adsorbent_coal_name",
+        "type_key": "adsorbent_coal_type",
+        "manufacturer": "",
+        "country_key": "",
+        "passport_bulk_density_min": 0.45,
+        "passport_bulk_density_max": 0.65,
+        "experimental_bed_density_min": None,
+        "experimental_bed_density_max": None,
+        "bet_surface_area": "800-1300 m²/g",
+        "comment_key": "adsorbent_generic_comment",
+    },
+    "custom": {
+        "name_key": "adsorbent_custom_name",
+        "type_key": "adsorbent_custom_type",
+        "manufacturer": "",
+        "country_key": "",
+        "passport_bulk_density_min": None,
+        "passport_bulk_density_max": None,
+        "experimental_bed_density_min": None,
+        "experimental_bed_density_max": None,
+        "comment_key": "adsorbent_custom_comment",
+    },
+}
